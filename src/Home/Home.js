@@ -2,7 +2,15 @@ import Navbar from "../Navbar/Navbar";
 
 export default function Home() {
   return (
-    <div style={{'background-image':`url(${'https://deekshasharma.vercel.app/img/bg05.jpg'})`}}>
+    <div
+      style={{
+        "background-image": `url(${"https://deekshasharma.vercel.app/img/bg05.jpg"})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100%",
+        height: "100vh",
+      }}
+    >
       <Navbar />
       <div
         className="centre"
@@ -14,9 +22,34 @@ export default function Home() {
         }}
       >
         <div className="centre-text">
-          <h1 className="top-text" style={{'backgroundImage':`linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%)`}}>Hi There! 🙏</h1>
+          <h1
+            className="top-text"
+            style={{
+              backgroundImage: `linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%)`,
+            }}
+          >
+            Hi There! 🙏
+          </h1>
           <h1 className="middle-text">
-            I'M <span style={{marginLeft:'-58px','backgroundImage':`linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%)` }}>Myself Raghav Chauhan</span>
+            I'M{" "}
+            <span
+              style={{
+                marginLeft: "-58px",
+                backgroundImage: `linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%)`,
+              }}
+            >
+              Myself Raghav Chauhan
+            </span>
+            <h1>
+              <span
+                style={{
+                 
+                  backgroundImage: `linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%)`,
+                }}
+              >
+                I am a Full Stack Developer
+              </span>
+            </h1>
           </h1>
         </div>
         <div
@@ -30,6 +63,6 @@ export default function Home() {
           />
         </div>
       </div>
-      </div>
+    </div>
   );
 }
